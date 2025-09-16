@@ -28,7 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0FD47FD1CA402FD4956A1062 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		0FD47FD1CA402FD4956A1062 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		24400DD64253D13794AC73A5 /* Pods-flagshipHorizon_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flagshipHorizon_Example.debug.xcconfig"; path = "Target Support Files/Pods-flagshipHorizon_Example/Pods-flagshipHorizon_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		3217A78076007E92A0A77CC6 /* Pods-flagshipHorizon_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flagshipHorizon_Example.release.xcconfig"; path = "Target Support Files/Pods-flagshipHorizon_Example/Pods-flagshipHorizon_Example.release.xcconfig"; sourceTree = "<group>"; };
 		3B9E37F893CB61075654A7A9 /* Pods-flagshipHorizon_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flagshipHorizon_Tests.release.xcconfig"; path = "Target Support Files/Pods-flagshipHorizon_Tests/Pods-flagshipHorizon_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -43,10 +43,10 @@
 		607FACE51AFB9204008FA782 /* flagshipHorizon_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = flagshipHorizon_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		6753056EFFB182BCEF08422F /* flagshipHorizon.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = flagshipHorizon.podspec; path = ../flagshipHorizon.podspec; sourceTree = "<group>"; };
+		6753056EFFB182BCEF08422F /* flagshipHorizon.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = flagshipHorizon.podspec; path = ../flagshipHorizon.podspec; sourceTree = "<group>"; };
 		A3704724A91CC3BEF88D30EB /* Pods-flagshipHorizon_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flagshipHorizon_Tests.debug.xcconfig"; path = "Target Support Files/Pods-flagshipHorizon_Tests/Pods-flagshipHorizon_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		C6A93035245A87203044BE2B /* Pods_flagshipHorizon_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_flagshipHorizon_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DAF84D603E651B5C34C71297 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		DAF84D603E651B5C34C71297 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,7 +147,6 @@
 				A3704724A91CC3BEF88D30EB /* Pods-flagshipHorizon_Tests.debug.xcconfig */,
 				3B9E37F893CB61075654A7A9 /* Pods-flagshipHorizon_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,6 +226,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -479,6 +479,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = flagshipHorizon/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -494,6 +495,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = flagshipHorizon/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -516,6 +518,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -534,6 +537,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
