@@ -1,9 +1,10 @@
 use_frameworks!
 
-platform :ios, '13.0'
+platform :ios, '15.0'
 
 target 'flagshipHorizon_Example' do
   pod 'flagshipHorizon', :path => '../'
+  pod 'OpenFeature', '~> 0.3.0'
 
   target 'flagshipHorizon_Tests' do
     inherit! :search_paths

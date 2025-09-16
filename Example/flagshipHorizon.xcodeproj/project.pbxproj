@@ -269,10 +269,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-flagshipHorizon_Example/Pods-flagshipHorizon_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/OpenFeature/OpenFeature.framework",
 				"${BUILT_PRODUCTS_DIR}/flagshipHorizon/flagshipHorizon.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OpenFeature.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/flagshipHorizon.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
