@@ -1,0 +1,16 @@
+PODS:
+  - flagshipHorizon (0.1.0)
+
+DEPENDENCIES:
+  - flagshipHorizon (from `../`)
+
+EXTERNAL SOURCES:
+  flagshipHorizon:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  flagshipHorizon: 745a1cb8e4dbc48af962c85c4b108b76e33f6f70
+
+PODFILE CHECKSUM: edb87fadc0a77a9a905b52d9f0f4d795330e6b05
+
+COCOAPODS: 1.16.2

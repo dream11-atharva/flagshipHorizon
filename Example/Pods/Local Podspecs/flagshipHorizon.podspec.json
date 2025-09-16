@@ -1,0 +1,22 @@
+{
+  "name": "flagshipHorizon",
+  "version": "0.1.0",
+  "summary": "A short description of flagshipHorizon.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/210496608/flagshipHorizon",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "210496608": "atharva.kothawade@dream11.com"
+  },
+  "source": {
+    "git": "https://github.com/210496608/flagshipHorizon.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "flagshipHorizon/Classes/**/*"
+}
