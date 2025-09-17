@@ -50,7 +50,7 @@ public class FlagshipHorizon {
         setFlag(key: "premium_user", value: .boolean(true))
         
         // String flags
-        setFlag(key: "welcome_message", value: .string("Welcome to Flagship Horizon!!!!!"))
+        setFlag(key: "welcome_message", value: .string("Welcome to Flagship Horizon!!!!!!"))
         setFlag(key: "api_version", value: .string("v2.1"))
         setFlag(key: "theme_color", value: .string("blue"))
         
