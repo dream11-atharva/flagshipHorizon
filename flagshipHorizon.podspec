@@ -16,11 +16,11 @@ Pod::Spec.new do |s|
   Use it to register a FeatureProvider with OpenFeature and evaluate flags.
                        DESC
 
-  s.homepage         = 'https://github.com/dream11/flagshipHorizon'
+  s.homepage         = 'https://github.com/dream11-atharva/flagshipHorizon'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { '210496608' => 'atharva.kothawade@dream11.com' }
-  s.source           = { :git => 'https://github.com/dream11/flagshipHorizon.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/dream11-atharva/flagshipHorizon.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '15.0'
   s.swift_versions        = ['5.7', '5.8', '5.9']
