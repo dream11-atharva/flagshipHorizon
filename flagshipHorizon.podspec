@@ -28,15 +28,22 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/210496608/flagshipHorizon.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '15.0'
 
-  s.source_files = 'flagshipHorizon/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'flagshipHorizon' => ['flagshipHorizon/Assets/*.png']
-  # }
+  # Core subspec (main SDK)
+  s.subspec 'Core' do |core|
+    core.ios.deployment_target = '15.0'
+    core.source_files = 'Sources/Core/**/*.{swift}'
+  end
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  # OpenFeature adapter subspec
+  s.subspec 'OpenFeature' do |ss|
+    ss.ios.deployment_target = '15.0'
+    ss.source_files = 'Sources/OpenFeatureAdapter/**/*.{swift}'
+    ss.dependency 'OpenFeature', '~> 0.3'
+    ss.dependency 'flagshipHorizon/Core'
+  end
+
+  # Default subspec includes Core only
+  s.default_subspecs = ['Core']
 end

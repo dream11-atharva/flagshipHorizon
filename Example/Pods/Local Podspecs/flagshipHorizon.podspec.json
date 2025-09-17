@@ -16,7 +16,33 @@
     "tag": "0.1.0"
   },
   "platforms": {
-    "ios": "10.0"
+    "ios": "15.0"
   },
-  "source_files": "flagshipHorizon/Classes/**/*"
+  "default_subspecs": [
+    "Core"
+  ],
+  "subspecs": [
+    {
+      "name": "Core",
+      "platforms": {
+        "ios": "15.0"
+      },
+      "source_files": "Sources/Core/**/*.{swift}"
+    },
+    {
+      "name": "OpenFeature",
+      "platforms": {
+        "ios": "15.0"
+      },
+      "source_files": "Sources/OpenFeatureAdapter/**/*.{swift}",
+      "dependencies": {
+        "OpenFeature": [
+          "~> 0.3"
+        ],
+        "flagshipHorizon/Core": [
+
+        ]
+      }
+    }
+  ]
 }
