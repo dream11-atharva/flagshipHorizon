@@ -1,10 +1,12 @@
 PODS:
-  - flagshipHorizon (0.1.0)
+  - flagshipHorizon/Core (0.1.0)
+  - flagshipHorizon/OpenFeature (0.1.0):
+    - flagshipHorizon/Core
+    - OpenFeature (~> 0.3)
   - OpenFeature (0.3.0)
 
 DEPENDENCIES:
-  - flagshipHorizon (from `../`)
-  - OpenFeature (~> 0.3.0)
+  - flagshipHorizon/OpenFeature (from `../`)
 
 SPEC REPOS:
   trunk:
@@ -15,9 +17,9 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  flagshipHorizon: c40b1f97a48816e22691777694058ec2f5fc1fa5
+  flagshipHorizon: a0d8d11610b42fb0b5cc7b64ba6475a8353d102e
   OpenFeature: 985529d7d21078c4166233b254446728af642c49
 
-PODFILE CHECKSUM: 2a1c550460d1b39b7bed43d2d128d9c784a7ba61
+PODFILE CHECKSUM: dd343b30f462db21e2e7b433d58528e098fbfe6a
 
 COCOAPODS: 1.16.2

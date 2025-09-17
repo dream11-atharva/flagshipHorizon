@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0078C4042610516111BC550EE239D54D /* flagshipHorizon-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 26B73D2358DC25EB707F74816EFEB5FA /* flagshipHorizon-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		00B2039E756FA70E3FC60EBC8F953042 /* ErrorCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81174230AB17DDDD0D37983FB323B975 /* ErrorCode.swift */; };
-		0278D1E68AA362F78D5030DE050E45A5 /* flagshipHorizon-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 605E560FF831876C789B14D5DEA99A12 /* flagshipHorizon-dummy.m */; };
 		0AF6C5F623F92F43D97B6BF94B6CB65D /* Pods-flagshipHorizon_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 02A37F6A877E6CCA2DE5BF4A7592C57C /* Pods-flagshipHorizon_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0EBF4D63CFC98769AD829A80266624C7 /* flagshipHorizon-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B7BA8562F5B888FD3480AB683CB8CB30 /* flagshipHorizon-dummy.m */; };
 		2C6C2104E85530C73A0A8DABE71466E7 /* FlagEvaluationOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C615563FDB1F9E5BBFED7914E36274AF /* FlagEvaluationOptions.swift */; };
 		2DAD0F7B4692D1268F728EEC7F1B739C /* ProviderMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81749F0A1E5E30EFF85226F8C00D814 /* ProviderMetadata.swift */; };
 		362C3084826EDB63E1FC066E4A748B43 /* HookContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29F1BD5BD4752CCE21B0971605584C7 /* HookContext.swift */; };
@@ -17,21 +18,21 @@
 		4BDC0D2849A9ACF35774BFEB0CA56CDC /* OpenFeatureAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CA4EC4531436DE369F7150A4E37FC7 /* OpenFeatureAPI.swift */; };
 		4FC988541CEC4C9D96BEC9987FEDA53E /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D69AA413BDA4BF77A100FB02BFDEB28 /* Client.swift */; };
 		624D9E7070BB4486E55B619473A0EE68 /* Hook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3918AA0CFD471D4808DA0885F5C1BB31 /* Hook.swift */; };
+		67F85FE5803012634FDE080800B298DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
 		68D73879C168C1A0696331B00FC6037B /* Features+Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538CC5B0997CD839A175ADF5BD4CB9F7 /* Features+Defaults.swift */; };
 		703E30D41A7A2A5D97FDFF700A0DFB1E /* Structure.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C40E0F6E2CAD6E3308E8C6ABCDED1F /* Structure.swift */; };
 		71635C583A7D2DF319FE0F8E07D0EC5C /* OpenFeatureClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CF20DC4954B728F452F17E48967497 /* OpenFeatureClient.swift */; };
 		7319A49F62536B33CE75F5076A1F61A9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
 		8F224CAA0CB7349539D458F242A39204 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
 		91EBEACAFDB40AEB9F6665D258C005EC /* HookSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FEEAE21A9610A4EC4522C718286452 /* HookSupport.swift */; };
-		96252BA60BAFB3EED0FC666A2EE106A0 /* flagshipHorizon-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DE959796D47D7AB0E482C8C915C188C7 /* flagshipHorizon-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9795B1B794BDB53517F29A43E5A7E221 /* FlagMetadataValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1BF44F38685FFDCE5E67549651393E5 /* FlagMetadataValue.swift */; };
 		983FA82A52A8C37F8356FCF538FB65B2 /* Pods-flagshipHorizon_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CB53D7B526A99587B3FA7A5F36C158D /* Pods-flagshipHorizon_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9939B9C95E028CCCF9AED446C2582DF1 /* EvaluationContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121C921C70923190EF20EDC118D83F09 /* EvaluationContext.swift */; };
-		9E0D785F110140722398C2F5DCF9FAD0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+		99650FBEFBA93AAE046BBE3FB8602896 /* FlagshipHorizonProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3AD092231246F42A4B50BFCEC58E20 /* FlagshipHorizonProvider.swift */; };
 		A32FAFA789066500CBA8B5E6544DD565 /* Pods-flagshipHorizon_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CA5E414CE3246B9F8B067D4A643AB55E /* Pods-flagshipHorizon_Example-dummy.m */; };
+		AB6CD63E7486A71119E1F8AD1016FD4C /* FlagshipHorizon.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF36F710268CCFBE666C85ACA7576754 /* FlagshipHorizon.swift */; };
 		AD3AFC8DF004A3D6AF695D8CFE207DE2 /* Pods-flagshipHorizon_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CBED7DB2CD9EBB0D460E4E4A35CD705F /* Pods-flagshipHorizon_Tests-dummy.m */; };
 		AE8406484881492A6035F7A89663C912 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
-		AE899E4751B05801BB446F7FB6E3B3AB /* FlagshipHorizon.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF52AD06DC7B6363CEB2956A71788C4 /* FlagshipHorizon.swift */; };
 		B08E66491463649904D24B6BA5C02BE8 /* FlagEvaluationDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815B0567E5426095809526431C7A720C /* FlagEvaluationDetails.swift */; };
 		B3E2BE8219611F8A48DFFB0ED00CADCC /* MutableStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA735CEA76E71D5F05039EE7A0CC89C6 /* MutableStructure.swift */; };
 		B4488CBEAECC0DB26BFE0D5CB2F5F3F3 /* EventHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB473CADE1B64BB847E14C7B2B2D80E /* EventHandler.swift */; };
@@ -52,26 +53,33 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		04CDE664DFC37D8A4DB97E13F7242C04 /* PBXContainerItemProxy */ = {
+		0102E54E4A9BA90BD705544990B0E592 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 386E783E6C28328786B10F8E4C6E5A53;
-			remoteInfo = "Pods-flagshipHorizon_Example";
+			remoteGlobalIDString = CFEAFDEF72B3F4A2C357D931FAF6A4B6;
+			remoteInfo = OpenFeature;
 		};
-		52F776A6EEADD1B1435B823343FB8963 /* PBXContainerItemProxy */ = {
+		6BE7E5E42D75586112EB13C5A67A3918 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 9555DFE2FFC999533C0484ECA8EEE49E;
 			remoteInfo = flagshipHorizon;
 		};
-		B3ECB603C4149A9F29C0003FBC5B79A5 /* PBXContainerItemProxy */ = {
+		969D766525629A76D619D3A07E6CE0AF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = CFEAFDEF72B3F4A2C357D931FAF6A4B6;
 			remoteInfo = OpenFeature;
+		};
+		B209E242BCAE5C1175A0748DD164E748 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 386E783E6C28328786B10F8E4C6E5A53;
+			remoteInfo = "Pods-flagshipHorizon_Example";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -83,7 +91,10 @@
 		139B9E3C6E4A41C69D798E72057D6531 /* BaseEvaluation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseEvaluation.swift; path = Sources/OpenFeature/BaseEvaluation.swift; sourceTree = "<group>"; };
 		1468636E75B35DD82E18CBB80C7E76F0 /* FlagValueType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlagValueType.swift; path = Sources/OpenFeature/FlagValueType.swift; sourceTree = "<group>"; };
 		1F9C8704437D1622127760C5AA931B27 /* FeatureProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FeatureProvider.swift; path = Sources/OpenFeature/Provider/FeatureProvider.swift; sourceTree = "<group>"; };
+		26B73D2358DC25EB707F74816EFEB5FA /* flagshipHorizon-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "flagshipHorizon-umbrella.h"; sourceTree = "<group>"; };
 		2B9B3A12736C2C786B30C8DDF328B043 /* flagshipHorizon */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = flagshipHorizon; path = flagshipHorizon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E6783FD1A74019BB58188027CF077D0 /* flagshipHorizon.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = flagshipHorizon.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		30C23CCBC342A443087B2633285287A4 /* flagshipHorizon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = flagshipHorizon.release.xcconfig; sourceTree = "<group>"; };
 		32023770D749FFDCAE9408866F673DBC /* Pods-flagshipHorizon_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-flagshipHorizon_Example-frameworks.sh"; sourceTree = "<group>"; };
 		33FEEAE21A9610A4EC4522C718286452 /* HookSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HookSupport.swift; path = Sources/OpenFeature/HookSupport.swift; sourceTree = "<group>"; };
 		384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
@@ -95,7 +106,6 @@
 		571A65069363D776AB7CF9B34A47ADE4 /* Pods-flagshipHorizon_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-flagshipHorizon_Tests.modulemap"; sourceTree = "<group>"; };
 		595569A995381CCAC770A3F0EC00D0AB /* MutableContext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MutableContext.swift; path = Sources/OpenFeature/MutableContext.swift; sourceTree = "<group>"; };
 		5CB53D7B526A99587B3FA7A5F36C158D /* Pods-flagshipHorizon_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-flagshipHorizon_Tests-umbrella.h"; sourceTree = "<group>"; };
-		605E560FF831876C789B14D5DEA99A12 /* flagshipHorizon-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "flagshipHorizon-dummy.m"; sourceTree = "<group>"; };
 		61FAF107CC58E4715D3764B5AD219A6F /* ClientMetadata.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ClientMetadata.swift; path = Sources/OpenFeature/ClientMetadata.swift; sourceTree = "<group>"; };
 		621842DC36427208BFF4AE3A00213AD6 /* Pods-flagshipHorizon_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-flagshipHorizon_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		64C6CC664300117036567379F130B904 /* Pods-flagshipHorizon_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-flagshipHorizon_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -109,41 +119,40 @@
 		78B82108B691A2EA4190974E80D8DDA0 /* Pods-flagshipHorizon_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-flagshipHorizon_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		81174230AB17DDDD0D37983FB323B975 /* ErrorCode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ErrorCode.swift; path = Sources/OpenFeature/exceptions/ErrorCode.swift; sourceTree = "<group>"; };
 		815B0567E5426095809526431C7A720C /* FlagEvaluationDetails.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlagEvaluationDetails.swift; path = Sources/OpenFeature/FlagEvaluationDetails.swift; sourceTree = "<group>"; };
+		82D4E5C9D9E89AB44C749187C060FB8B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		82EE5D589CB191F627230C2FE3E742F5 /* Pods-flagshipHorizon_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-flagshipHorizon_Example.modulemap"; sourceTree = "<group>"; };
 		8A318D750753294E4DA89944BC5367FC /* Pods-flagshipHorizon_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-flagshipHorizon_Example"; path = Pods_flagshipHorizon_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		981EB715E75DA72FBA8FACC781F28180 /* OpenFeatureError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OpenFeatureError.swift; path = Sources/OpenFeature/exceptions/OpenFeatureError.swift; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9DD39C034768A090D3F5DB885B9E6564 /* OpenFeature-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OpenFeature-umbrella.h"; sourceTree = "<group>"; };
 		A0D4D82500300204D9E1E97147D83252 /* OpenFeature-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "OpenFeature-Info.plist"; sourceTree = "<group>"; };
-		A4DAF2B979F99C392CF102B339EED7D4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		ADF52AD06DC7B6363CEB2956A71788C4 /* FlagshipHorizon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlagshipHorizon.swift; path = flagshipHorizon/Classes/FlagshipHorizon.swift; sourceTree = "<group>"; };
 		B1BF44F38685FFDCE5E67549651393E5 /* FlagMetadataValue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlagMetadataValue.swift; path = Sources/OpenFeature/FlagMetadataValue.swift; sourceTree = "<group>"; };
 		B1E5C5DC0046B19E9635446E93B7E185 /* NoOpProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NoOpProvider.swift; path = Sources/OpenFeature/Provider/NoOpProvider.swift; sourceTree = "<group>"; };
+		B7BA8562F5B888FD3480AB683CB8CB30 /* flagshipHorizon-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "flagshipHorizon-dummy.m"; sourceTree = "<group>"; };
 		B81749F0A1E5E30EFF85226F8C00D814 /* ProviderMetadata.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProviderMetadata.swift; path = Sources/OpenFeature/Provider/ProviderMetadata.swift; sourceTree = "<group>"; };
-		BA876388C760E434DBB64BA84CF037A6 /* flagshipHorizon.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = flagshipHorizon.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		BBB0A9067D166C368EA6914FED7CC631 /* flagshipHorizon.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = flagshipHorizon.modulemap; sourceTree = "<group>"; };
 		BD81EEBA4C9CFD377E6F1D15E3467A2B /* OpenFeature-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "OpenFeature-dummy.m"; sourceTree = "<group>"; };
 		C362775F446D1CE78AD78EC97492741B /* Pods-flagshipHorizon_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-flagshipHorizon_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		C44DEDF728AFE59B680AE0ACA2C79912 /* Pods-flagshipHorizon_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-flagshipHorizon_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		C615563FDB1F9E5BBFED7914E36274AF /* FlagEvaluationOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlagEvaluationOptions.swift; path = Sources/OpenFeature/FlagEvaluationOptions.swift; sourceTree = "<group>"; };
 		C6E486872C1FE813564AC351AF2D2730 /* Pods-flagshipHorizon_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-flagshipHorizon_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		C7613FD582209609BD25B4B39B80DCDB /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		C8A4E5790EEBD1F04D39427F752931D8 /* flagshipHorizon-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "flagshipHorizon-prefix.pch"; sourceTree = "<group>"; };
 		C8C40E0F6E2CAD6E3308E8C6ABCDED1F /* Structure.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Structure.swift; path = Sources/OpenFeature/Structure.swift; sourceTree = "<group>"; };
 		CA5E414CE3246B9F8B067D4A643AB55E /* Pods-flagshipHorizon_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-flagshipHorizon_Example-dummy.m"; sourceTree = "<group>"; };
 		CB235BB606BFC65FE1E41CCEF59EE139 /* Reason.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Reason.swift; path = Sources/OpenFeature/Reason.swift; sourceTree = "<group>"; };
 		CBED7DB2CD9EBB0D460E4E4A35CD705F /* Pods-flagshipHorizon_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-flagshipHorizon_Tests-dummy.m"; sourceTree = "<group>"; };
+		CE3AD092231246F42A4B50BFCEC58E20 /* FlagshipHorizonProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlagshipHorizonProvider.swift; path = Sources/OpenFeatureAdapter/FlagshipHorizonProvider.swift; sourceTree = "<group>"; };
+		CF36F710268CCFBE666C85ACA7576754 /* FlagshipHorizon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlagshipHorizon.swift; path = Sources/Core/FlagshipHorizon.swift; sourceTree = "<group>"; };
 		CF762994CFCCC423F58141C52356E173 /* ProviderEvaluation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProviderEvaluation.swift; path = Sources/OpenFeature/Provider/ProviderEvaluation.swift; sourceTree = "<group>"; };
+		D01391CB299F1172EFD20F4183F6D907 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		D23D8A84B704D962821DCDD1602DE431 /* OpenFeature */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = OpenFeature; path = OpenFeature.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D905EAF382D22391D6AB466FA54AD595 /* flagshipHorizon-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "flagshipHorizon-prefix.pch"; sourceTree = "<group>"; };
+		D5AB5C2B20601E16051B947E07CAB986 /* flagshipHorizon-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "flagshipHorizon-Info.plist"; sourceTree = "<group>"; };
+		D6EA44E59F3A16007BBAACC488BA025E /* flagshipHorizon.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = flagshipHorizon.modulemap; sourceTree = "<group>"; };
 		DA735CEA76E71D5F05039EE7A0CC89C6 /* MutableStructure.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MutableStructure.swift; path = Sources/OpenFeature/MutableStructure.swift; sourceTree = "<group>"; };
 		DDB473CADE1B64BB847E14C7B2B2D80E /* EventHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EventHandler.swift; path = Sources/OpenFeature/EventHandler.swift; sourceTree = "<group>"; };
-		DE959796D47D7AB0E482C8C915C188C7 /* flagshipHorizon-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "flagshipHorizon-umbrella.h"; sourceTree = "<group>"; };
 		E454CF225531DDECEB66CED651AA4E90 /* OpenFeature-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OpenFeature-prefix.pch"; sourceTree = "<group>"; };
 		E6CF20DC4954B728F452F17E48967497 /* OpenFeatureClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OpenFeatureClient.swift; path = Sources/OpenFeature/OpenFeatureClient.swift; sourceTree = "<group>"; };
-		EAF072B7558813D265F0BA5457AA763B /* flagshipHorizon-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "flagshipHorizon-Info.plist"; sourceTree = "<group>"; };
-		EC133D8987695230B93D984952846149 /* flagshipHorizon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = flagshipHorizon.debug.xcconfig; sourceTree = "<group>"; };
+		E7BE100DEE2740A7D0A34A829F6EF624 /* flagshipHorizon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = flagshipHorizon.debug.xcconfig; sourceTree = "<group>"; };
 		F29F1BD5BD4752CCE21B0971605584C7 /* HookContext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HookContext.swift; path = Sources/OpenFeature/HookContext.swift; sourceTree = "<group>"; };
-		F473AC84B746FC420A8404EC57F0AC24 /* flagshipHorizon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = flagshipHorizon.release.xcconfig; sourceTree = "<group>"; };
 		F570AA5BE962338B31991F6DAD8B37B3 /* ProviderEvents.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProviderEvents.swift; path = Sources/OpenFeature/Provider/ProviderEvents.swift; sourceTree = "<group>"; };
 		FF8200EE381245EA4EB5A248676F166B /* Pods-flagshipHorizon_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-flagshipHorizon_Tests-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -157,19 +166,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6710E66A5B45DA78CB5A1C7BEB4CB91D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67F85FE5803012634FDE080800B298DA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		99C5B776D514F2F672C23F4475B03C31 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				8F224CAA0CB7349539D458F242A39204 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F5B2C21825E35B75D24D240685D9806A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9E0D785F110140722398C2F5DCF9FAD0 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,23 +193,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		21A471C0E630535271B8A76E7AFDEB0B /* Development Pods */ = {
+		04356B7CA9319AD5A4A990562A34AF48 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				40B746041381777E7AE8A26CFBE044D6 /* flagshipHorizon */,
+				D6EA44E59F3A16007BBAACC488BA025E /* flagshipHorizon.modulemap */,
+				B7BA8562F5B888FD3480AB683CB8CB30 /* flagshipHorizon-dummy.m */,
+				D5AB5C2B20601E16051B947E07CAB986 /* flagshipHorizon-Info.plist */,
+				C8A4E5790EEBD1F04D39427F752931D8 /* flagshipHorizon-prefix.pch */,
+				26B73D2358DC25EB707F74816EFEB5FA /* flagshipHorizon-umbrella.h */,
+				E7BE100DEE2740A7D0A34A829F6EF624 /* flagshipHorizon.debug.xcconfig */,
+				30C23CCBC342A443087B2633285287A4 /* flagshipHorizon.release.xcconfig */,
 			);
-			name = "Development Pods";
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/flagshipHorizon";
 			sourceTree = "<group>";
 		};
-		40B746041381777E7AE8A26CFBE044D6 /* flagshipHorizon */ = {
+		317C5053C2E42F10ADCB8AAFCFFFF258 /* OpenFeature */ = {
 			isa = PBXGroup;
 			children = (
-				ADF52AD06DC7B6363CEB2956A71788C4 /* FlagshipHorizon.swift */,
-				8477EFD9A964EDD621BB20AC12CFA5F5 /* Pod */,
-				AAAADF4C0281256C810CE22EC0E98D03 /* Support Files */,
+				CE3AD092231246F42A4B50BFCEC58E20 /* FlagshipHorizonProvider.swift */,
 			);
-			name = flagshipHorizon;
-			path = ../..;
+			name = OpenFeature;
 			sourceTree = "<group>";
 		};
 		67EBDE3C5BE17F543F9852C466755A73 /* Support Files */ = {
@@ -226,29 +239,34 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		8477EFD9A964EDD621BB20AC12CFA5F5 /* Pod */ = {
+		88C08DF773D8B0ED8A69EE0E0A89ECE1 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				BA876388C760E434DBB64BA84CF037A6 /* flagshipHorizon.podspec */,
-				A4DAF2B979F99C392CF102B339EED7D4 /* LICENSE */,
-				C7613FD582209609BD25B4B39B80DCDB /* README.md */,
+				2E6783FD1A74019BB58188027CF077D0 /* flagshipHorizon.podspec */,
+				D01391CB299F1172EFD20F4183F6D907 /* LICENSE */,
+				82D4E5C9D9E89AB44C749187C060FB8B /* README.md */,
 			);
 			name = Pod;
 			sourceTree = "<group>";
 		};
-		AAAADF4C0281256C810CE22EC0E98D03 /* Support Files */ = {
+		94B203BAB644BA4CF3456A92BE1D398A /* flagshipHorizon */ = {
 			isa = PBXGroup;
 			children = (
-				BBB0A9067D166C368EA6914FED7CC631 /* flagshipHorizon.modulemap */,
-				605E560FF831876C789B14D5DEA99A12 /* flagshipHorizon-dummy.m */,
-				EAF072B7558813D265F0BA5457AA763B /* flagshipHorizon-Info.plist */,
-				D905EAF382D22391D6AB466FA54AD595 /* flagshipHorizon-prefix.pch */,
-				DE959796D47D7AB0E482C8C915C188C7 /* flagshipHorizon-umbrella.h */,
-				EC133D8987695230B93D984952846149 /* flagshipHorizon.debug.xcconfig */,
-				F473AC84B746FC420A8404EC57F0AC24 /* flagshipHorizon.release.xcconfig */,
+				A132F1F5259E315A2B405321C03D9CB3 /* Core */,
+				317C5053C2E42F10ADCB8AAFCFFFF258 /* OpenFeature */,
+				88C08DF773D8B0ED8A69EE0E0A89ECE1 /* Pod */,
+				04356B7CA9319AD5A4A990562A34AF48 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/flagshipHorizon";
+			name = flagshipHorizon;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		A132F1F5259E315A2B405321C03D9CB3 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				CF36F710268CCFBE666C85ACA7576754 /* FlagshipHorizon.swift */,
+			);
+			name = Core;
 			sourceTree = "<group>";
 		};
 		B13976E61AF1CA5D2B1FDA7C8D6626EF /* Products */ = {
@@ -266,7 +284,7 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				21A471C0E630535271B8A76E7AFDEB0B /* Development Pods */,
+				DA0EBA577DDC2BFEEA4EA3A4D2FCB6F4 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				777307EFC8568CC7D01D0073B91FA75E /* Pods */,
 				B13976E61AF1CA5D2B1FDA7C8D6626EF /* Products */,
@@ -280,6 +298,14 @@
 				E4801F62A6B08CD9B5410329F1A18FDE /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DA0EBA577DDC2BFEEA4EA3A4D2FCB6F4 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				94B203BAB644BA4CF3456A92BE1D398A /* flagshipHorizon */,
+			);
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		E2E8A0B0149A9E81134D8644CD731F83 /* Targets Support Files */ = {
@@ -389,19 +415,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4921F23A69627D97619AF89EF7070EF2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0078C4042610516111BC550EE239D54D /* flagshipHorizon-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		808E98BFAA12BE508E93E3FA09D46478 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				F1363768516498BDFFEE9CE050F1C603 /* OpenFeature-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EC155FD29DC9EDFA6792AAFB8CBF5391 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				96252BA60BAFB3EED0FC666A2EE106A0 /* flagshipHorizon-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,8 +446,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				B73CAE81D58B9082E73F19A7A9143885 /* PBXTargetDependency */,
-				5512662E82119CEFB50D5BD231613CDA /* PBXTargetDependency */,
+				B3E9B71A44B0FF24DF86D2F4C4FAEF6A /* PBXTargetDependency */,
+				BFE73B59A021AEC7554DB36E1970EBFE /* PBXTargetDependency */,
 			);
 			name = "Pods-flagshipHorizon_Example";
 			productName = Pods_flagshipHorizon_Example;
@@ -430,16 +456,17 @@
 		};
 		9555DFE2FFC999533C0484ECA8EEE49E /* flagshipHorizon */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B8506DC9D6915B3FC3D4F72E50636031 /* Build configuration list for PBXNativeTarget "flagshipHorizon" */;
+			buildConfigurationList = D529D14F4CE54C7049184A8CE2671D5C /* Build configuration list for PBXNativeTarget "flagshipHorizon" */;
 			buildPhases = (
-				EC155FD29DC9EDFA6792AAFB8CBF5391 /* Headers */,
-				351835CDF459221A8D252CBE353673E1 /* Sources */,
-				F5B2C21825E35B75D24D240685D9806A /* Frameworks */,
-				73D7E8BC2204980A2F3709F69A35EFF5 /* Resources */,
+				4921F23A69627D97619AF89EF7070EF2 /* Headers */,
+				301462E060E19F0683203B21AF6BC842 /* Sources */,
+				6710E66A5B45DA78CB5A1C7BEB4CB91D /* Frameworks */,
+				07BFD5836D707CC04175B2B0909BDFEF /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CCB51C68075C3204AD813D7E8E61BA29 /* PBXTargetDependency */,
 			);
 			name = flagshipHorizon;
 			productName = flagshipHorizon;
@@ -458,7 +485,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				1EE03BF52F957D13774E010CA199A744 /* PBXTargetDependency */,
+				EAE69252DBC7B44819DD1F480E58B343 /* PBXTargetDependency */,
 			);
 			name = "Pods-flagshipHorizon_Tests";
 			productName = Pods_flagshipHorizon_Tests;
@@ -516,6 +543,13 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		07BFD5836D707CC04175B2B0909BDFEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		25F87C452CB1B10A113F8B7F12E85B04 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -524,13 +558,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		4BA0C626E01C4BA73A126E8826E860F0 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		73D7E8BC2204980A2F3709F69A35EFF5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -547,12 +574,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		351835CDF459221A8D252CBE353673E1 /* Sources */ = {
+		301462E060E19F0683203B21AF6BC842 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE899E4751B05801BB446F7FB6E3B3AB /* FlagshipHorizon.swift in Sources */,
-				0278D1E68AA362F78D5030DE050E45A5 /* flagshipHorizon-dummy.m in Sources */,
+				AB6CD63E7486A71119E1F8AD1016FD4C /* FlagshipHorizon.swift in Sources */,
+				0EBF4D63CFC98769AD829A80266624C7 /* flagshipHorizon-dummy.m in Sources */,
+				99650FBEFBA93AAE046BBE3FB8602896 /* FlagshipHorizonProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -612,64 +640,33 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1EE03BF52F957D13774E010CA199A744 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-flagshipHorizon_Example";
-			target = 386E783E6C28328786B10F8E4C6E5A53 /* Pods-flagshipHorizon_Example */;
-			targetProxy = 04CDE664DFC37D8A4DB97E13F7242C04 /* PBXContainerItemProxy */;
-		};
-		5512662E82119CEFB50D5BD231613CDA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = flagshipHorizon;
-			target = 9555DFE2FFC999533C0484ECA8EEE49E /* flagshipHorizon */;
-			targetProxy = 52F776A6EEADD1B1435B823343FB8963 /* PBXContainerItemProxy */;
-		};
-		B73CAE81D58B9082E73F19A7A9143885 /* PBXTargetDependency */ = {
+		B3E9B71A44B0FF24DF86D2F4C4FAEF6A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = OpenFeature;
 			target = CFEAFDEF72B3F4A2C357D931FAF6A4B6 /* OpenFeature */;
-			targetProxy = B3ECB603C4149A9F29C0003FBC5B79A5 /* PBXContainerItemProxy */;
+			targetProxy = 0102E54E4A9BA90BD705544990B0E592 /* PBXContainerItemProxy */;
+		};
+		BFE73B59A021AEC7554DB36E1970EBFE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = flagshipHorizon;
+			target = 9555DFE2FFC999533C0484ECA8EEE49E /* flagshipHorizon */;
+			targetProxy = 6BE7E5E42D75586112EB13C5A67A3918 /* PBXContainerItemProxy */;
+		};
+		CCB51C68075C3204AD813D7E8E61BA29 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OpenFeature;
+			target = CFEAFDEF72B3F4A2C357D931FAF6A4B6 /* OpenFeature */;
+			targetProxy = 969D766525629A76D619D3A07E6CE0AF /* PBXContainerItemProxy */;
+		};
+		EAE69252DBC7B44819DD1F480E58B343 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-flagshipHorizon_Example";
+			target = 386E783E6C28328786B10F8E4C6E5A53 /* Pods-flagshipHorizon_Example */;
+			targetProxy = B209E242BCAE5C1175A0748DD164E748 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0E8B0B02CE64ADA75FF7CD839516B958 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F473AC84B746FC420A8404EC57F0AC24 /* flagshipHorizon.release.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = NO;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				GCC_PREFIX_HEADER = "Target Support Files/flagshipHorizon/flagshipHorizon-prefix.pch";
-				GENERATE_INFOPLIST_FILE = NO;
-				INFOPLIST_FILE = "Target Support Files/flagshipHorizon/flagshipHorizon-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/flagshipHorizon/flagshipHorizon.modulemap";
-				PRODUCT_MODULE_NAME = flagshipHorizon;
-				PRODUCT_NAME = flagshipHorizon;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_INSTALL_OBJC_HEADER = YES;
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		144206164EAE2BBA4AF1D4576D79E753 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 40963649E17DE64D4E9FFA9AB44E2214 /* OpenFeature.release.xcconfig */;
@@ -707,9 +704,9 @@
 			};
 			name = Release;
 		};
-		4138AEAF00F29D13F8890F46908A1150 /* Debug */ = {
+		50DFD8CE4EF088FB2CAD75D8DF25972A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EC133D8987695230B93D984952846149 /* flagshipHorizon.debug.xcconfig */;
+			baseConfigurationReference = E7BE100DEE2740A7D0A34A829F6EF624 /* flagshipHorizon.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1017,6 +1014,43 @@
 			};
 			name = Release;
 		};
+		A42E377E042AF504F0C3BC7DB76576B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30C23CCBC342A443087B2633285287A4 /* flagshipHorizon.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/flagshipHorizon/flagshipHorizon-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Target Support Files/flagshipHorizon/flagshipHorizon-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/flagshipHorizon/flagshipHorizon.modulemap";
+				PRODUCT_MODULE_NAME = flagshipHorizon;
+				PRODUCT_NAME = flagshipHorizon;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		F6A6A2D435C89588E18E62FCE170CAEA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C6E486872C1FE813564AC351AF2D2730 /* Pods-flagshipHorizon_Tests.debug.xcconfig */;
@@ -1074,15 +1108,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B8506DC9D6915B3FC3D4F72E50636031 /* Build configuration list for PBXNativeTarget "flagshipHorizon" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4138AEAF00F29D13F8890F46908A1150 /* Debug */,
-				0E8B0B02CE64ADA75FF7CD839516B958 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		BBEA570904650F0780145997CA4BF209 /* Build configuration list for PBXNativeTarget "OpenFeature" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1097,6 +1122,15 @@
 			buildConfigurations = (
 				F6A6A2D435C89588E18E62FCE170CAEA /* Debug */,
 				6A88BE3B4883A7832A61EAC5721B3EA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D529D14F4CE54C7049184A8CE2671D5C /* Build configuration list for PBXNativeTarget "flagshipHorizon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50DFD8CE4EF088FB2CAD75D8DF25972A /* Debug */,
+				A42E377E042AF504F0C3BC7DB76576B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
