@@ -18,13 +18,17 @@ public final class FlagshipHorizonProvider: FeatureProvider {
     public var hooks: [any Hook] = []
     public var metadata: ProviderMetadata = FlagshipHorizonMetadata()
 
-    public init() {
-        print("++++++ inside FlagshipHorizonProvider init")
+    public init(sdkKey: String) {
+        // Configure the core SDK with the provided SDK key
+        let config = FlagshipHorizonConfig(apiKey: sdkKey)
+        FlagshipHorizon.shared.configure(with: config)
     }
 
     // Lifecycle (no-ops for now)
     public func initialize(initialContext: EvaluationContext?) async { }
-    public func onContextSet(oldContext: EvaluationContext?, newContext: EvaluationContext) async { }
+    public func onContextSet(oldContext: EvaluationContext?, newContext: EvaluationContext) async {
+        print("++++++ Context set in provider: \(oldContext) +++++++++ \(newContext.getValue(key:"Email" ))")
+    }
     public func shutdown() async { }
 
     // MARK: Evaluations — use Core SDK
@@ -33,6 +37,7 @@ public final class FlagshipHorizonProvider: FeatureProvider {
         defaultValue: Bool,
         context: EvaluationContext?
     ) -> ProviderEvaluation<Bool> {
+        
         let value = FlagshipHorizon.shared.getBooleanFlag(key: key, defaultValue: defaultValue)
         return ProviderEvaluation(
             value: value,

@@ -18,16 +18,27 @@ class ViewController: UIViewController {
     }
     
     private func setupOpenFeatureAndUI() {
-        let config = FlagshipHorizonConfig(apiKey: "test-api-key-123")
-        FlagshipHorizon.shared.configure(with: config)
-                    
-        FlagshipHorizon.shared.testFlags()
-        
-        let provider = FlagshipHorizonProvider()
-        
-        OpenFeatureAPI.shared.setProvider(provider: provider)
-        
-        setupWelcomeLabel()
+        Task {
+            let provider = FlagshipHorizonProvider(sdkKey: "test-api-key-123")
+            await OpenFeatureAPI.shared.setProviderAndWait(provider: provider)
+            
+            let context = MutableContext(
+                targetingKey: "user123",
+                structure: MutableStructure(attributes: [
+                    "Email": Value.string("john@example.com"),
+                    "Country": Value.string("US"),
+                    "Plan": Value.string("premium"),
+                    "Rating": Value.double(4.5),
+                    "Roles": Value.list([Value.string("admin"), Value.string("premium_user")])
+                ])
+            )
+            
+            OpenFeatureAPI.shared.setEvaluationContext(evaluationContext: context)
+            
+            await MainActor.run {
+                self.setupWelcomeLabel()
+            }
+        }
     }
     
     private func setupWelcomeLabel() {
@@ -56,6 +67,7 @@ class ViewController: UIViewController {
         let client = OpenFeatureAPI.shared.getClient()
         
         let newFeatureEnabled = client.getBooleanValue(key: "new_feature_enabled", defaultValue: false)
+        let premiumFeature = client.getBooleanValue(key: "premium_feature", defaultValue: false)
         
         let welcomeMessage = client.getStringValue(key: "welcome_message", defaultValue: "Default Welcome")
         
@@ -64,7 +76,7 @@ class ViewController: UIViewController {
         let discountRate = client.getDoubleValue(key: "discount_rate", defaultValue: 0.0)
         
         let providerLabel = UILabel()
-        providerLabel.text = "Flags: Feature=\(newFeatureEnabled), Retries=\(maxRetries), Discount=\(discountRate)"
+        providerLabel.text = "Flags: Feature=\(newFeatureEnabled), Premium=\(premiumFeature), Retries=\(maxRetries)"
         providerLabel.textAlignment = .center
         providerLabel.font = UIFont.systemFont(ofSize: 14, weight: .regular)
         providerLabel.textColor = .green
@@ -79,10 +91,20 @@ class ViewController: UIViewController {
         messageLabel.numberOfLines = 0
         messageLabel.translatesAutoresizingMaskIntoConstraints = false
         
+        // Add button to update email context
+        let updateEmailButton = UIButton(type: .system)
+        updateEmailButton.setTitle("Update Email Context", for: .normal)
+        updateEmailButton.backgroundColor = .systemBlue
+        updateEmailButton.setTitleColor(.white, for: .normal)
+        updateEmailButton.layer.cornerRadius = 8
+        updateEmailButton.translatesAutoresizingMaskIntoConstraints = false
+        updateEmailButton.addTarget(self, action: #selector(updateEmailContext), for: .touchUpInside)
+        
         view.addSubview(welcomeLabel)
         view.addSubview(testLabel)
         view.addSubview(providerLabel)
         view.addSubview(messageLabel)
+        view.addSubview(updateEmailButton)
         
         NSLayoutConstraint.activate([
             welcomeLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
@@ -99,8 +121,34 @@ class ViewController: UIViewController {
             messageLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             messageLabel.topAnchor.constraint(equalTo: providerLabel.bottomAnchor, constant: 20),
             messageLabel.leadingAnchor.constraint(greaterThanOrEqualTo: view.leadingAnchor, constant: 20),
-            messageLabel.trailingAnchor.constraint(lessThanOrEqualTo: view.trailingAnchor, constant: -20)
+            messageLabel.trailingAnchor.constraint(lessThanOrEqualTo: view.trailingAnchor, constant: -20),
+            
+            updateEmailButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            updateEmailButton.topAnchor.constraint(equalTo: messageLabel.bottomAnchor, constant: 30),
+            updateEmailButton.widthAnchor.constraint(equalToConstant: 200),
+            updateEmailButton.heightAnchor.constraint(equalToConstant: 44)
         ])
+    }
+
+    @objc private func updateEmailContext() {
+        print("++++++ Button tapped - updating email context")
+        
+        // Create new context with updated email
+        let newContext = MutableContext(
+            targetingKey: "user123",
+            structure: MutableStructure(attributes: [
+                "Email": Value.string("updated@example.com"),  // Updated email
+                "Country": Value.string("US"),
+                "Plan": Value.string("premium"),
+                "Rating": Value.double(4.8),  // Updated rating
+                "Roles": Value.list([Value.string("admin"), Value.string("premium_user")])
+            ])
+        )
+        
+        // Set the new context
+        OpenFeatureAPI.shared.setEvaluationContext(evaluationContext: newContext)
+        
+        print("++++++ Email context updated to: updated@example.com")
     }
 
     override func didReceiveMemoryWarning() {
